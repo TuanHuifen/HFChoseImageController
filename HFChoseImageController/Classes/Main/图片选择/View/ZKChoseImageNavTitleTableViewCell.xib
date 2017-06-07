@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZKChoseImageNavTitleTableViewCell" rowHeight="97" id="KGk-i7-Jjw" customClass="ZKChoseImageNavTitleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEE-Z8-e3y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="拍照" translatesAutoresizingMaskIntoConstraints="NO" id="5tz-2y-8gZ">
+                                <rect key="frame" x="10" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5tz-2y-8gZ" secondAttribute="height" multiplier="1:1" id="7ph-dA-T7p"/>
+                                    <constraint firstAttribute="width" constant="70" id="oAo-aR-zNe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YD-v3-FVS">
+                                <rect key="frame" x="90" y="10" width="29" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0张)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd2-cb-goD">
+                                <rect key="frame" x="90" y="63" width="33" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4u-Js-iWz">
+                                <rect key="frame" x="10" y="95.5" width="300" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="KMJ-Aq-Qkf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rd2-cb-goD" firstAttribute="leading" secondItem="2YD-v3-FVS" secondAttribute="leading" id="7EY-bV-30g"/>
+                            <constraint firstItem="2YD-v3-FVS" firstAttribute="leading" secondItem="5tz-2y-8gZ" secondAttribute="trailing" constant="10" id="DL9-hw-uOp"/>
+                            <constraint firstAttribute="bottom" secondItem="v4u-Js-iWz" secondAttribute="bottom" id="JBb-oY-uRD"/>
+                            <constraint firstItem="Rd2-cb-goD" firstAttribute="bottom" secondItem="5tz-2y-8gZ" secondAttribute="bottom" id="OlF-SH-9m1"/>
+                            <constraint firstItem="2YD-v3-FVS" firstAttribute="top" secondItem="5tz-2y-8gZ" secondAttribute="top" id="V3U-OX-Gx9"/>
+                            <constraint firstItem="5tz-2y-8gZ" firstAttribute="leading" secondItem="zEE-Z8-e3y" secondAttribute="leading" constant="10" id="VzT-wf-LIF"/>
+                            <constraint firstItem="5tz-2y-8gZ" firstAttribute="top" secondItem="zEE-Z8-e3y" secondAttribute="top" constant="10" id="YpT-qg-Dg5"/>
+                            <constraint firstItem="v4u-Js-iWz" firstAttribute="leading" secondItem="zEE-Z8-e3y" secondAttribute="leading" constant="10" id="hTL-JT-aaj"/>
+                            <constraint firstAttribute="trailing" secondItem="v4u-Js-iWz" secondAttribute="trailing" constant="10" id="iyl-rw-mLu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zEE-Z8-e3y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cth-4E-ZKx"/>
+                    <constraint firstItem="zEE-Z8-e3y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IAt-Mr-Ode"/>
+                    <constraint firstAttribute="bottom" secondItem="zEE-Z8-e3y" secondAttribute="bottom" id="RCQ-l9-SIi"/>
+                    <constraint firstAttribute="trailing" secondItem="zEE-Z8-e3y" secondAttribute="trailing" id="zMW-KR-LFY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLab" destination="Rd2-cb-goD" id="jZx-A7-l2V"/>
+                <outlet property="nameLab" destination="2YD-v3-FVS" id="BXS-Wf-z5O"/>
+                <outlet property="picImageView" destination="5tz-2y-8gZ" id="IJk-6O-T9R"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="99.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="拍照" width="186" height="186"/>
+    </resources>
+</document>
